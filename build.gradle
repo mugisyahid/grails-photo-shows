@@ -69,3 +69,10 @@ assets {
     minifyJs = true
     minifyCss = true
 }
+
+
+
+
+//heroku task
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
